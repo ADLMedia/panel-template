@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Uptime System</title>
+<link rel="shortcut icon" href="https://cdn.discordapp.com/avatars/503294559111872532/bec883f565e23b78f37ac08350787446.png?size=1024" type="image/x-icon" />
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+     <link rel="stylesheet" href="css/button-login.css">
+     <link rel="stylesheet" href="css/panel.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/tooplate-gymso-style.css">
+ <script src="https://kit.fontawesome.com/3d8aee06ed.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+body {
+	color: #f13a11;
+}
+h1 {
+	color: #f13a11;
+}
+  </style>
+
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+ <nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+<a class="navbar-brand" href="/">Uptime System</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-lg-auto">
+<li class="nav-item">
+<a href="/" class="nav-link smoothScroll">&emsp;Home&emsp;</a>
+</li>
+<a>|</a> 
+<li class="nav-item">
+<a href="/premium" class="nav-link smoothScroll">&emsp;Premium&emsp;</a>
+</li>
+<a>|</a> 
+<li class="nav-item">
+<a href="/sponsor" class="nav-link smoothScroll">&emsp;Sponsor&emsp;</a>
+</li>
+
+
+&emsp;&emsp;&emsp;&emsp;
+<li class="nav-item">
+<a href="/panel" class="nav-link2 smoothScroll">&emsp;<%= user.username + "#" +user.discriminator %></a>
+</li>   
+<a> / </a>
+<li class="nav-item">
+<a href="/logout" class="nav-link3 smoothScroll">Sign Out&emsp;</a>
+</li>   
+</ul>
+<a href="/panel"> <img src="https://cdn.discordapp.com/avatars/<%= user.id + "/" + user.avatar %>.webp?size=1024" style="width:50px;height:50px;margin-right:10px;border-radius:50%;pointer-events: none;"/></a>
+</div>
+
+</li></ul></div></div></nav>
+
+       <body class="hero d-flex flex-column justify-content-center align-items-center" id="home">
+<div class="bg-overlay222" ></div>
+          
+  
+  <div class="container222" id="container222">
+
+	<div class="form-container222 sign-in-container222">
+<form method="post" action="/addprojects">
+			<h1 class= "panelcss3">Uptime System</h1><br>
+			<input  autocomplete="off" type="url" name="link" placeholder="https://uptimesystem.net/" />
+<br>
+      <input type=hidden name="id" value="<%= user.id%>">
+
+			<button type="submit">Apply</button>
+      
+	</div>
+</form>
+</form>
+	<div class="overlay333-container222">
+		<div class="overlay333">
+			<div class="overlay333-panel overlay333-right">
+				<h1 class= "panelcss4">Hello, <%= user.username %>!</h1>	
+
+				<a class="panelcss2" href="https://discord.gg/2xsx2fKZjz" link="black" alink="green" vlink="red"  target="_blank" > If you like our system, you can support us by coming to our discord address.</a>
+<div class="acikrenk" >
+      <h4>
+        ‏‏‎ ‎
+      </h4>
+      
+     <table>
+      <tr>
+        <td><b><u>Your projects:</u></b>‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎</td>
+         </table>
+<table>
+<td><%= projectname %></td>
+<table></tr>
+      
+      </table>
+<table>
+<td><b><u>Number of projects:</u></b></td>
+ </table>
+<table>
+<td><%= numara %></td>
+<table></tr>
+<br><br>
+
+<form method="post" action="/temizlee">
+  <input type=hidden name="id" value="<%= user.id%>">
+<button class = "panelcss6">Delete All</button>
+
+</form>
+
+			
+</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/aos.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>
